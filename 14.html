@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       body {
+      margin: 0; /* Remove default margin */
+      height: 100vh; /* Make it cover the full screen */
+      background: linear-gradient(to bottom,white , lightblue 10% 20%, rgb(85, 248, 85)) 70%; /* Two colors */
+      
+    }
+      img {
+        width: 50vw;
+        height: 50vw;
+      }
+
+      @keyframes fly1 {
+        10% {
+          /* background-color: antiquewhite; */
+          /* border: 2px salmon solid; */
+
+          background-size: 100%;
+          background-repeat: no-repeat;
+          transform: scale(5,5);
+          background-image: url(https://www.butterflyidentification.com/wp-content/uploads/2020/02/Do-Butterflies-Lay-Eggs-768x576.jpg);
+        }
+        15% {
+          background-repeat: no-repeat;
+          background-size: 100%;
+          transform: scale(1.7,1.7);
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuuoIPMn5NRxusaEop7yEoQeN9F_OEPbLisbeJFu3EBDmbKR-XJRLgp7ARzLkJtOyYSRU&usqp=CAU);
+        }
+       
+
+        30% {
+          background-repeat: no-repeat;
+          background-size: 100%;
+          transform: scale(2,2);
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-Gt5fnMGps7gQ-eOgG4Gvm3qV4BPUzELlcGOIjXFD0Eksl5Upi1MWGGXVfy5h0_SxKc&usqp=CAU);
+        }
+        45% {
+          background-repeat: no-repeat;
+          background-size: 100%;
+          transform: scale(2.8,2.8);
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk4mdkBZh7F-ZEH-rhddOc9WTUKVF4Og0XYQ&s);
+        }
+        60% {
+          background-repeat: no-repeat;
+          background-size: 100%;
+          transform: scale(3.2,3.2);
+          background-image: url(https://m.espacepourlavie.ca/sites/espacepourlavie.ca/files/styles/gal-photo-large/public/sc60-img_3540-390x520_0.jpg?itok=Wut1m-Sf);
+        }
+        75% {
+          background-repeat: no-repeat;
+          background-size: 100%;
+          transform: scale(3.8,3.8);
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShb8FfX2IHdHiTJ7w9I5goBQwQeT7B89v3Q1JXK28UkYyWx5wvRPWfqcmNkn0NS-ZLA44&usqp=CAU);
+        } 
+        90% {
+          background-repeat: no-repeat;
+          background-size: 100%;
+          transform: scale(3,3);
+          background-image: url(https://www.mosquitosquad.com/img/upload/gettyimages-1417044516.jpg);
+        } 
+       
+        100% {
+          /* background-color: aqua; */
+          /* border: 2px green dotted; */
+
+          background-repeat: no-repeat;
+          background-size: 100%;
+          transform: scale(4,4);
+          background-image: url(https://butterfly-conservation.org/sites/default/files/styles/masthead/public/2019-02/30730637487-monarch-danaus-plexippus.jpg?itok=yXGLe77u);
+          
+;
+        }
+      }
+      .fly {
+        height: 20vw;
+        width: 30vw;
+        animation-name: fly1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-delay: 2sec;
+        animation-direction: normal;
+        margin: 250px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fly"></div>
+  </body>
+</html>
